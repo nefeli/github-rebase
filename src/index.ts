@@ -12,7 +12,7 @@ import {
   Sha,
   updateRef,
   withTemporaryRef,
-} from "shared-github-internals/lib/git";
+} from "../shared-github-internals/src/git";
 
 import { AutosquashingStep, getAutosquashingSteps } from "./autosquashing";
 

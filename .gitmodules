@@ -1,0 +1,3 @@
+[submodule "shared-github-internals"]
+	path = shared-github-internals
+	url = git@github.com:nefeli/shared-github-internals.git
