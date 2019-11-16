@@ -34,7 +34,7 @@ const getAutosquashMode = ({
   // eslint-disable-next-line security/detect-non-literal-regexp
   const matches = new RegExp(
     `^(fixup|squash)! (fixup! |squash! )*(${
-      getCommitSubjectAndBody(commitDetails.message).subject
+      getCommitSubjectAndBody(commitDetails.message).subject.replace('[', '\[').replace(']', '\]')
     }|${commitDetails.sha}|${commitDetails.sha.substr(7)})$`,
     "u",
   ).exec(getCommitSubjectAndBody(message).subject);
